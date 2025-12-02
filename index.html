@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+ body{
+    height: 100vh;
+   background: Linear-gradient(135deg, #041527, #0067E0 );
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .login-container{
+    background: rgb(253, 253, 253);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    width: 300px;
+    position: relative; 
+    box-shadow: 0px 20px 40px rgb(0, 0, 0);
+ }
+ .login-container h2{
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 600px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+ }
+ .login-container input{
+   width: 100%;
+   padding: 18px 20px;
+   margin: 15px 0;
+   border-radius: 12px;
+   border: 2px solid #160380;
+   transition: all 0.3s ease;
+   outline: none;
+   box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+.login-container input:focus{
+    outline: none; 
+border-color: #7b70cc;
+box-shadow: 0 0 3px #000000;
+transform: translateY(-20px);
+}
+.login-container button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.login-container button:hover{
+    transform: translateY(-4px);
+background: linear-gradient(  45deg, #000000, #0080ff);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+}
+.login-container button:active{
+    transform: translateY(0);
+    
+}
+.login-container p{
+    margin-top: 20px;
+    color: #000000;
+    opacity: 65%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.login-container p:hover{
+    color: #080cd6;
+    text-decoration: underline;
+}
+  </style>                                                                                                                                                                                                                                                                                                                                                   
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+    <form>
+       <input type="text" placeholder="Login" required>
+       <input type="password" placeholder="Senha" required>
+       <button type="submit">Entrar</button>
+       </form>
+  <p>Esqueceu a senha?</p>  
+   </div>  
+ </body>
+</html>
